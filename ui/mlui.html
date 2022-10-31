@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cl.css">
+    <link rel="stylesheet" href="./dropzone.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <title>CLASSIFIER</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CLASSIFIER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="link navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dropzone">Classify</a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+   <!--<header>CLASSIFIER</header>-->
+
+   <div class="photoid">
+       <div id="txt">
+       <div>    
+       <p class="typing"></p>
+       </div>
+       </div>
+       <div id="pic">
+       <img id="set" src="Computer.jpg" alt="COMPUTER VECTOR"/>
+       </div>
+   </div>
+   <div id="item">
+    <hr>
+   </div>
+   <div class="container">
+    <div class="row">
+    <div class="col card-wrapper" data-player="brett_lee">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="lee.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">Brett Lee</h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col card-wrapper" data-player="jasprit_bumrah">
+          <div class="card border-0">
+              <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                  <img class="w-100 h-100" src="jasprit.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body text-center mt-4">
+                  <h4 class="text-uppercase card-title">Jasprit Bumrah</h4>
+                  </p>
+              </div>
+          </div>
+          </div>
+          <div class="col card-wrapper" data-player="rafael_nadal">
+            <div class="card border-0">
+                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                    <img class="w-100 h-100" src="rafael.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body text-center mt-4">
+                    <h4 class="text-uppercase card-title">Rafael Nadal</h4>
+                    </p>
+                </div>
+            </div>
+            </div>
+            
+              <div class="col card-wrapper" data-player="maria_sharapova">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="maria.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Maria Sharapova</h4>
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="col card-wrapper" data-player="novak_djokovic">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="novak.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Novak Djokovic</h4>
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                        <div class="col card-wrapper" data-player="virat_kohli">
+                            <div class="card border-0">
+                                <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                                    <img class="w-100 h-100" src="kohli.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="text-uppercase card-title">Virat Kohli</h4>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <form action="/file-upload" class="dropzone" id="dropzone">
+                            <div class="dz-message needsclick">
+                                <img src="upload.png" width="75vw" height="50vw"><br>
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="button" class="btn btn-success" style="margin-left: 5px;">Classify</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-8 error" id="error" >
+                <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>    
+            </div>
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <div class="col-sm-4" id="divClassTable">
+                <table id="classTable">
+                        <tr>
+                            <th>Player</th>
+                            <th>Probability Score</th>
+                        </tr>
+                        <tr>
+                            <td>Brett Lee</td>
+                            <td id="score_brett_lee"></td>
+                        </tr>
+                        <tr>
+                            <td>Jasprit Bumrah</td>
+                            <td id="score_jasprit_bumrah"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Rafael Nadal</td>
+                            <td id="score_rafael_nadal"></td>
+                        </tr>
+                        <tr>
+                            <td>Maria Sharapova</td>
+                            <td id="score_maria_sharapova"></td>
+                        </tr>
+                        <tr>
+                            <td>Novak Djokovic </td>
+                            <td id="score_novak_djokovic"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Virat Kohli</td>
+                            <td id="score_virat_kohli"></td>
+                        </tr>
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+    <footer class="down">
+      
+    </footer>                    
+
+   <!--js files-->
+   <script src="app.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script src="./dropzone.min.js"></script>
+   <script src="./logic1.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

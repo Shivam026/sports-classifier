@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*header
+{
+text-align:center;
+font-size: 45px;
+font-weight: bold;
+}*/
+.link
+{
+position: relative;
+left:86%;
+}
+.photoid
+{
+display:flex;
+margin-top: 20px;
+height:350px;
+}
+#txt p{
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 65px;
+    font-weight:bold;
+    font-family: 'Playfair Display', serif;
+}
+#txt
+{
+    margin-top: 20px;
+    padding:20px;
+    display:flex;
+    
+}
+#pic
+{
+position: absolute;
+left:44%;
+
+}
+#set
+{
+    width: 61%;
+    height: 50%;
+    margin-left: 32%;
+    border-radius: 5%;
+}
+
+hr{
+width:50%;
+margin-left: 25% !important;    
+}
+.custom-circle-image {
+    width: 10vw; /* note i used vw not px for better responsive */
+    height: 10vw;
+  }
+  
+  .custom-circle-image img {
+    object-fit: cover;
+  }
+  .dropzone {
+    border-style: dotted !important;
+    margin-left: 55px;
+
+  }
+  
+  
+  .error {
+    font-family: MerriweatherRegular;
+    font-size: 15px;
+    line-height: initial;
+    color: black;
+    text-align: center;
+  }
+  
+  #classTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 80%;
+    
+  
+  }
+  
+  #classTable td, #classTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  #classTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: purple;
+    color: white;
+  }
+  .down
+  {
+   background-color: black;
+   height:50px;
+   margin-top: 5px;
+  } 
+@media only screen and (max-width: 600px) {
+    #pic{
+position: absolute;
+left:-22%;
+
+}
+#txt{
+    margin-top: 148px;
+}
+  }
